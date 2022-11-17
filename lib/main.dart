@@ -128,7 +128,7 @@ class MyHomePageState extends State<MyHomePage> {
   SideMenuItem _sideMenuItem(
       {required int index, required String title, required IconData icon}) {
     return SideMenuItem(
-      priority: 4,
+      priority: index,
       title: title,
       onTap: () {
         page.jumpToPage(index);
